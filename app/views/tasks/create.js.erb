@@ -1,0 +1,5 @@
+a = document.querySelectorAll('.<%= @category.title.split.join('-') %> > ul > li');
+b = document.createElement('li');
+b.innerText = '<%= @task.title  %>, to read: <%= @task.deadline.strftime('%D')  %>'
+
+a[a.length-1].parentElement.appendChild(b);

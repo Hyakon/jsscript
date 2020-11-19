@@ -1,0 +1,8 @@
+destroy = function(e){
+    this.parentElement.parentElement.remove();
+    console.log(this);
+}
+
+document.querySelectorAll('.delete').forEach((el) => {
+  el.addEventListener('click', destroy)  
+})
