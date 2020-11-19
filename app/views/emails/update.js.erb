@@ -1,0 +1,8 @@
+document.querySelector('a[href="/emails/<%= @email.id %>"]').classList.toggle('font-weight-bold')
+
+
+<% if @email.read %>
+  document.querySelector('.read').value = 'Marquer comme Non-Lu'
+<% else %>
+  document.querySelector('.read').value = 'Marquer comme Lu'
+<% end %>

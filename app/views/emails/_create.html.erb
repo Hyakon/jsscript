@@ -1,0 +1,5 @@
+<% if email.read %>
+  <p><%= link_to email.object, email, remote: true %></p>
+<% else %>
+  <p><%= link_to email.object, email, remote: true, class: 'font-weight-bold' %></p>
+<% end %>

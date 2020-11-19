@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="container col-6">
+
+    <h1>Emails</h1>
+
+    <%= button_to 'Generate', emails_path, method: :post, remote: true %>
+
+    <div class="email">
+      <% @emails.each do |email| %>
+        <%= render 'create', email: email %>
+      <% end %>
+    </div>
+
+  </div>
+
+  <div class="container  bg-light col-6">
+
+    <div class="show">
+    </div>
+
+  </div>
+
+</div>
